@@ -1,25 +1,27 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
 
+@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="804cd4e1-813c-848c-6958-36eebedc4681"] 
+{opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="fc538baf-922e-a41b-a9ab-d10e6ecad6b4"] 
+{opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="d4ed8a20-9cc3-ffc6-f727-965bd9773791"] 
+{opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="845c28d7-7905-e85e-8f4e-ec457bb3e825"] 
+{opacity:0;}}
+
 body {
   text-align: center;
-  padding: 60px -1px;
-  background: black;
+  padding:0px 0px;
+  background: linear-gradient(#05000c , #0f1521);
   font-family: 'Outfit', sans-serif;
-  color:white;
+  color:rgba(44, 15, 118, 0.554);
   min-height: 100px;
+  display: block;
 }
 
 body::-webkit-scrollbar{
   display: none;
 }
 
-/* .container_bubble{
-  position:relative;
-  overflow: hidden;
-  width:100%;
-  height:9vh;
-} */
+
 .bubbles{
   position: relative;
   display:flex;
@@ -56,7 +58,7 @@ body::-webkit-scrollbar{
 footer{
   margin-top: 20em;
   position:relative;
-  width:100%;
+  width:94%;
   background: #3586ff;
   min-height: 100px;
   padding:20px 50px;
@@ -70,12 +72,13 @@ footer .icons , footer .timeline {
   display: flex;
   justify-content:center;
   align-items: center;
-  margin:10px 0;
+  margin:10px 30px;
+  
   flex-wrap:wrap;
 }
 footer .icons li , .timeline li{
   list-style:none;
-
+  
 }
 footer .icons li a{
   font-size: 2em;
@@ -83,12 +86,13 @@ footer .icons li a{
   margin:0 10px;
   display:inline-block;
   transition: 0.8s;
+  
 }
 footer .icons li a:hover{
   transform:translateY(-15px)
 }
 footer .timeline li a{
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: rgb(179, 245, 235);
   margin:0 10px;
   display:inline-block;
@@ -235,8 +239,10 @@ footer .wave#wave5{
   
 
   p{
+    margin-top: 87px;
     letter-spacing: 0.5rem;
-    font-size: 2em;
+    justify-content: center;
+    color: #7597de;
   }
   h1{
     font-size: 6em;
@@ -363,7 +369,7 @@ footer .wave#wave5{
   }
   
   .flip-card-front {
-     background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     background: linear-gradient(120deg, rgb(17, 17, 16) 60%, rgb(21, 28, 50) 88%,
        rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%); 
       
     
@@ -372,11 +378,34 @@ footer .wave#wave5{
   }
   
   .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, #49295C 88%,
-       bisque 40%, rgb(255, 185, 160) 78%); 
+    background: linear-gradient(120deg, rgb(13, 13, 13) 30%, #49295C 88%,
+       bisque 40%, rgb(16, 16, 16) 78%); 
     color: white;
     transform: rotateY(180deg);
   }
+  .flip-card-back .back_footer{
+    padding :0 15px;
+  }
+  .back_footer a{
+    
+    text-decoration: none;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 13px;
+    border: 1px solid rgb(134, 170, 231);
+    border-radius: 4px;
+    color: white;
+    margin-top: 30px;
+    transition: 0.5s;
+  }
+  .back_footer a:hover{
+    border-color: #05000c;
+    background: #05000c;
+    border-radius: 1px solid black;
+
+  }
+
   .card-holder{
     display: grid;
     margin-top: 7rem;
@@ -384,3 +413,5 @@ footer .wave#wave5{
     grid-template-columns: repeat(3,1fr);
     grid-auto-flow: row;
   }
+
+  
