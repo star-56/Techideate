@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "i": "^0.3.7",
+    "particles.js": "^2.0.0",
     "three": "^0.150.0",
     "three.js": "^0.77.1"
   }
